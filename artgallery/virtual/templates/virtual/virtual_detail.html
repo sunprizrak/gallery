@@ -1,0 +1,17 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section class="virtual-detail">
+        <div class="container">
+            <div class="frame">
+                {% if request.user.is_authenticated %}
+                    <iframe scrolling="no" src="{{ virtual_detail.field_name_log }}"></iframe>
+                {% else %}
+                    <iframe scrolling="no" src="{{ virtual_detail.field_name_nolog }}"></iframe>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

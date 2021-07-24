@@ -1,0 +1,25 @@
+{% extends 'main/layout.html' %}
+{% load static i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section class="history">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        {% if object %}
+                            {% for el in object %}
+                                <h2>{{ el.title }}</h2>
+                                <p>{{ el.text | safe }}</p>
+                            {% endfor %}
+                        {% else %}
+                            <p>У вас нет записей</p>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

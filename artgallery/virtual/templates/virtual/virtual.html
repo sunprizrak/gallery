@@ -1,0 +1,39 @@
+{% extends 'main/layout.html' %}
+{% load static i18n %}
+{% load static %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+<section class="virtual">
+    <div class="container">
+        <div class="section-title">
+            <h2>{% trans 'Виртуальные выставки' %}</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                <div class="icon-box position-relative">
+                    <div class="icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <a class="stretched-link" href="http://uploader.roundme.com/tour/116108/view/290984/" target="_blank">
+                        2017
+                    </a>
+                </div>
+            </div>
+            {% for el in virtual %}
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'virtual-detail' el.slug %}">
+                            {{ el.title }}
+                        </a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,42 @@
+{% extends 'main/layout.html' %}
+{% load static i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
+                        {% if object %}
+                            {% for el in object %}
+                                <h2>{{ el.title }}</h2>
+                                <div class="row text-center">
+                                    <div class="col">
+                                        <a href="{% url 'viewers' %}"><button type="button" class="btn btn-primary">{% trans 'Я хочу посетить выставку' %}</button></a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="{% url 'artists' %}"><button type="button" class="btn btn-success">{% trans 'Я хочу принять участие' %}</button></a>
+                                    </div>
+                                </div>
+                                <p>{{ el.text | safe }}</p>
+                            {% endfor %}
+                        {% else %}
+                            <p>У вас нет записей</p>
+                        {% endif %}
+                    </div>
+                    <div class="row text-center">
+                        <div class="col">
+                            <a href="{% url 'viewers' %}"><button type="button" class="btn btn-primary">{% trans 'Я хочу посетить выставку' %}</button></a>
+                        </div>
+                        <div class="col">
+                            <a href="{% url 'artists' %}"><button type="button" class="btn btn-success">{% trans 'Я хочу принять участие' %}</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+

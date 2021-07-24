@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-19 23:16+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: main/templates/main/about.html:17 main/templates/main/about.html:31
+msgid "Я хочу посетить выставку"
+msgstr "I want to visit exhibition"
+
+#: main/templates/main/about.html:20 main/templates/main/about.html:34
+msgid "Я хочу принять участие"
+msgstr "I want to participate"
+
+#: main/templates/main/artists.html:10 main/templates/main/index.html:34
+#: main/templates/main/layout.html:39 main/templates/main/layout.html:51
+#: main/templates/main/layout.html:153
+msgid "Художникам"
+msgstr "For artists"
+
+#: main/templates/main/index.html:11
+msgid "Я Моне"
+msgstr "R Monet"
+
+#: main/templates/main/index.html:12
+msgid "Я Шишкин"
+msgstr "R Shishkin"
+
+#: main/templates/main/index.html:13
+msgid "Я Малевич"
+msgstr "R Malevich"
+
+#: main/templates/main/index.html:16
+msgid ""
+"Мы примем на выставку от каждого художника по одному произведению при "
+"условии, что оно пройдёт во входную дверь"
+msgstr ""
+"We will accept one art work from every artist if it passes through the front "
+"door"
+
+#: main/templates/main/index.html:18
+msgid "Калининград Приём работ"
+msgstr "Kaliningrad Works Reception"
+
+#: main/templates/main/index.html:19
+#, fuzzy
+#| msgid "Калининград 20 июля - 20 сентября"
+msgid "Калининград 20 июля - 30 сентября"
+msgstr "Kaliningrad July 20 - September 30"
+
+#: main/templates/main/index.html:42 main/templates/main/layout.html:40
+#: main/templates/main/layout.html:52 main/templates/main/layout.html:158
+#: main/templates/main/viewers.html:10
+msgid "Зрителям"
+msgstr "For viewers"
+
+#: main/templates/main/index.html:50 main/templates/main/layout.html:41
+#: main/templates/main/layout.html:53 main/templates/main/layout.html:163
+msgid "О проекте"
+msgstr "About the project"
+
+#: main/templates/main/index.html:58 main/templates/main/layout.html:42
+#: main/templates/main/layout.html:54 main/templates/main/layout.html:168
+msgid "История проекта"
+msgstr "Project history"
+
+#: main/templates/main/index.html:66 main/templates/main/layout.html:43
+#: main/templates/main/layout.html:55 main/templates/main/layout.html:173
+#: virtual/templates/virtual/virtual.html:11
+msgid "Виртуальные выставки"
+msgstr "Virtual exhibitions"
+
+#: main/templates/main/index.html:74 main/templates/main/layout.html:44
+#: main/templates/main/layout.html:56 main/templates/main/layout.html:178
+msgid "Сотрудничество"
+msgstr "Cooperation"
+
+#: main/templates/main/index.html:82 main/templates/main/layout.html:45
+#: main/templates/main/layout.html:57 main/templates/main/layout.html:183
+#: main/templates/main/partners.html:10
+msgid "Партнёры"
+msgstr "Partners"
+
+#: main/templates/main/index.html:90 main/templates/main/layout.html:46
+#: main/templates/main/layout.html:58 main/templates/main/layout.html:188
+msgid "Главная"
+msgstr "Home"
+
+#: main/templates/main/layout.html:26
+msgid "ЯЯЯ"
+msgstr "RRR"
+
+#: main/templates/main/layout.html:77
+msgid "Международная выставка искусства"
+msgstr "International Art Exhibition"
+
+#: main/templates/main/layout.html:81
+msgid "Выйти"
+msgstr "Sign out"
+
+#: main/templates/main/layout.html:83
+#: users/templates/users/registration.html:11
+msgid "Регистрация"
+msgstr "Registration"
+
+#: main/templates/main/layout.html:84 users/templates/users/login.html:11
+#: users/templates/users/login.html:43
+msgid "Войти"
+msgstr "Sign in"
+
+#: main/templates/main/layout.html:122
+msgid "Подробности и справки"
+msgstr "Details and Help"
+
+#: main/templates/main/layout.html:195
+msgid "Мы в coциальных сетях"
+msgstr "Follow us"
+
+#: users/templates/users/login.html:46
+#: users/templates/users/registration.html:56
+msgid "Закрыть"
+msgstr "Close"
+
+#: users/templates/users/registration.html:53
+msgid "Зарегистрироваться"
+msgstr "Register"

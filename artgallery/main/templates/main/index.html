@@ -1,0 +1,97 @@
+{% extends 'main/layout.html' %}
+{% load static i18n %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block content %}
+    <section class="cap">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="h1-font-large">{% trans 'Я Моне' %}</h1>
+                    <h1 class="h1-font-large">{% trans 'Я Шишкин' %}</h1>
+                    <h1 class="h1-font-large">{% trans 'Я Малевич' %}</h1>
+                </div>
+                <div id="cap-right" class="col">
+                    <p>{% trans 'Мы примем на выставку от каждого художника по одному произведению при условии, что оно пройдёт во входную дверь' %}</p>
+                    <div id="cap-right-link" class="сol">
+                        <a class="nav-link" href="{% url 'artists' %}"><button type="button" class="btn btn-info rounded-pill">{% trans 'Калининград Приём работ' %}</button></a>
+                        <a class="nav-link" href="{% url 'viewers' %}"><button type="button" class="btn btn-success rounded-pill">{% trans 'Калининград 20 июля - 30 сентября' %}</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'artists' %}">{% trans 'Художникам' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'viewers' %}">{% trans 'Зрителям' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="fas fa-info-circle"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'about' %}">{% trans 'О проекте' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="fas fa-landmark"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'history' %}">{% trans 'История проекта' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'virtual' %}">{% trans 'Виртуальные выставки' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="far fa-handshake"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'cooperation' %}">{% trans 'Сотрудничество' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="far fa-thumbs-up"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'partners' %}">{% trans 'Партнёры' %}</a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+                    <div class="icon-box position-relative">
+                        <div class="icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <a class="stretched-link" href="{% url 'home' %}">{% trans 'Главная' %}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
