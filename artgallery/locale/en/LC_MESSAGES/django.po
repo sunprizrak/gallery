@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-19 23:16+0300\n"
+"POT-Creation-Date: 2021-07-29 00:49+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: artgallery/settings.py:137
+msgid "Russian"
+msgstr "Русский"
+
+#: artgallery/settings.py:138
+msgid "English"
+msgstr "Английский"
 
 #: main/templates/main/about.html:17 main/templates/main/about.html:31
 msgid "Я хочу посетить выставку"
@@ -27,8 +35,8 @@ msgid "Я хочу принять участие"
 msgstr "I want to participate"
 
 #: main/templates/main/artists.html:10 main/templates/main/index.html:34
-#: main/templates/main/layout.html:39 main/templates/main/layout.html:51
-#: main/templates/main/layout.html:153
+#: main/templates/main/layout.html:40 main/templates/main/layout.html:52
+#: main/templates/main/layout.html:154
 msgid "Художникам"
 msgstr "For artists"
 
@@ -62,73 +70,85 @@ msgstr "Kaliningrad Works Reception"
 msgid "Калининград 20 июля - 30 сентября"
 msgstr "Kaliningrad July 20 - September 30"
 
-#: main/templates/main/index.html:42 main/templates/main/layout.html:40
-#: main/templates/main/layout.html:52 main/templates/main/layout.html:158
+#: main/templates/main/index.html:42 main/templates/main/layout.html:41
+#: main/templates/main/layout.html:53 main/templates/main/layout.html:159
 #: main/templates/main/viewers.html:10
 msgid "Зрителям"
 msgstr "For viewers"
 
-#: main/templates/main/index.html:50 main/templates/main/layout.html:41
-#: main/templates/main/layout.html:53 main/templates/main/layout.html:163
+#: main/templates/main/index.html:50 main/templates/main/layout.html:42
+#: main/templates/main/layout.html:54 main/templates/main/layout.html:164
 msgid "О проекте"
 msgstr "About the project"
 
-#: main/templates/main/index.html:58 main/templates/main/layout.html:42
-#: main/templates/main/layout.html:54 main/templates/main/layout.html:168
+#: main/templates/main/index.html:58 main/templates/main/layout.html:43
+#: main/templates/main/layout.html:55 main/templates/main/layout.html:169
 msgid "История проекта"
 msgstr "Project history"
 
-#: main/templates/main/index.html:66 main/templates/main/layout.html:43
-#: main/templates/main/layout.html:55 main/templates/main/layout.html:173
+#: main/templates/main/index.html:66 main/templates/main/layout.html:44
+#: main/templates/main/layout.html:56 main/templates/main/layout.html:174
 #: virtual/templates/virtual/virtual.html:11
 msgid "Виртуальные выставки"
 msgstr "Virtual exhibitions"
 
-#: main/templates/main/index.html:74 main/templates/main/layout.html:44
-#: main/templates/main/layout.html:56 main/templates/main/layout.html:178
+#: main/templates/main/index.html:74 main/templates/main/layout.html:45
+#: main/templates/main/layout.html:57 main/templates/main/layout.html:179
 msgid "Сотрудничество"
 msgstr "Cooperation"
 
-#: main/templates/main/index.html:82 main/templates/main/layout.html:45
-#: main/templates/main/layout.html:57 main/templates/main/layout.html:183
+#: main/templates/main/index.html:82 main/templates/main/layout.html:46
+#: main/templates/main/layout.html:58 main/templates/main/layout.html:184
 #: main/templates/main/partners.html:10
 msgid "Партнёры"
 msgstr "Partners"
 
-#: main/templates/main/index.html:90 main/templates/main/layout.html:46
-#: main/templates/main/layout.html:58 main/templates/main/layout.html:188
+#: main/templates/main/index.html:90 main/templates/main/layout.html:47
+#: main/templates/main/layout.html:59 main/templates/main/layout.html:189
 msgid "Главная"
 msgstr "Home"
 
-#: main/templates/main/layout.html:26
+#: main/templates/main/layout.html:27
 msgid "ЯЯЯ"
 msgstr "RRR"
 
-#: main/templates/main/layout.html:77
+#: main/templates/main/layout.html:78
 msgid "Международная выставка искусства"
 msgstr "International Art Exhibition"
 
-#: main/templates/main/layout.html:81
+#: main/templates/main/layout.html:82
 msgid "Выйти"
 msgstr "Sign out"
 
-#: main/templates/main/layout.html:83
+#: main/templates/main/layout.html:84
 #: users/templates/users/registration.html:11
 msgid "Регистрация"
 msgstr "Registration"
 
-#: main/templates/main/layout.html:84 users/templates/users/login.html:11
+#: main/templates/main/layout.html:85 users/templates/users/login.html:11
 #: users/templates/users/login.html:43
 msgid "Войти"
 msgstr "Sign in"
 
-#: main/templates/main/layout.html:122
+#: main/templates/main/layout.html:123
 msgid "Подробности и справки"
 msgstr "Details and Help"
 
-#: main/templates/main/layout.html:195
+#: main/templates/main/layout.html:196
 msgid "Мы в coциальных сетях"
 msgstr "Follow us"
+
+#: users/forms.py:15 users/forms.py:30
+msgid "Логин"
+msgstr "Login"
+
+#: users/forms.py:25 users/forms.py:31
+msgid "Пароль"
+msgstr "Password"
+
+#: users/forms.py:26
+msgid "Повторить пароль"
+msgstr "Repeat Password"
 
 #: users/templates/users/login.html:46
 #: users/templates/users/registration.html:56

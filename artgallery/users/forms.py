@@ -1,6 +1,7 @@
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth.models import User
 from django.forms import TextInput, EmailInput, PasswordInput, CharField
+from django.utils.translation import ugettext_lazy as _
 
 
 class RegisterUserForm(UserCreationForm):
@@ -11,7 +12,7 @@ class RegisterUserForm(UserCreationForm):
         widgets = {
             'username': TextInput(attrs={
                 'class': 'form-control',
-                'placeholder': 'Логин',
+                'placeholder': _('Логин'),
             }),
             'email': EmailInput(attrs={
                 'class': 'form-control',
@@ -21,10 +22,10 @@ class RegisterUserForm(UserCreationForm):
 
     def __init__(self, *args, **kwargs):
         super(RegisterUserForm, self).__init__(*args, **kwargs)
-        self.fields['password1'].widget = PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Пароль'})
-        self.fields['password2'].widget = PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Повторить пароль'})
+        self.fields['password1'].widget = PasswordInput(attrs={'class': 'form-control', 'placeholder': _('Пароль')})
+        self.fields['password2'].widget = PasswordInput(attrs={'class': 'form-control', 'placeholder': _('Повторить пароль')})
 
 
 class LoginUserForm(AuthenticationForm):
-    username = CharField(label='Логин', widget=TextInput(attrs={'class': 'form-control', 'placeholder': 'Логин'}))
-    password = CharField(label='Пароль', widget=PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Пароль'}))
+    username = CharField(label='Логин', widget=TextInput(attrs={'class': 'form-control', 'placeholder': _('Логин')}))
+    password = CharField(label='Пароль', widget=PasswordInput(attrs={'class': 'form-control', 'placeholder': _('Пароль')}))
