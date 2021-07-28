@@ -1,11 +1,12 @@
 from django.views.generic import ListView, TemplateView
 from .models import ArtistModel, ViewerModel, AboutModel, HistoryModel, TogetherModel, PartnersModel
+from django.utils.translation import ugettext_lazy as _
 
 
 class HomeView(TemplateView,):
     template_name = 'main/index.html'
     extra_context = {
-        'title': 'Международная выставка искусств | Я Моне Я Шишкин Я Малевич',
+        'title': _('Международная выставка искусств | Я Моне Я Шишкин Я Малевич'),
     }
 
 
@@ -14,7 +15,7 @@ class ArtistsView(ListView):
     template_name = 'main/artists.html'
     context_object_name = 'object'
     extra_context = {
-        'title': 'Художникам',
+        'title': _('Художникам'),
     }
 
 
@@ -23,7 +24,7 @@ class ViewersView(ListView):
     template_name = 'main/viewers.html'
     context_object_name = 'object'
     extra_context = {
-        'title': 'Зрителям',
+        'title': _('Зрителям'),
         }
 
 
@@ -32,7 +33,7 @@ class AboutView(ListView):
     template_name = 'main/about.html'
     context_object_name = 'object'
     extra_context = {
-        'title': 'О проекте',
+        'title': _('О проекте'),
     }
 
 
@@ -41,7 +42,7 @@ class HistoryView(ListView):
     template_name = 'main/history.html'
     context_object_name = 'object'
     extra_context = {
-        'title': 'История проекта',
+        'title': _('История проекта'),
     }
 
 
@@ -50,7 +51,7 @@ class TogetherView(ListView):
     template_name = 'main/together.html'
     context_object_name = 'object'
     extra_context = {
-        'title': 'Сотрудничество',
+        'title': _('Сотрудничество'),
     }
 
 
@@ -59,5 +60,5 @@ class PartnersView(ListView):
     template_name = 'main/partners.html'
     context_object_name = 'object'
     extra_context = {
-        'title': 'Партнёры',
+        'title': _('Партнёры'),
         }

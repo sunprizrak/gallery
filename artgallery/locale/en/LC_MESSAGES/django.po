@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-29 00:49+0300\n"
+"POT-Creation-Date: 2021-07-29 01:26+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,7 +36,7 @@ msgstr "I want to participate"
 
 #: main/templates/main/artists.html:10 main/templates/main/index.html:34
 #: main/templates/main/layout.html:40 main/templates/main/layout.html:52
-#: main/templates/main/layout.html:154
+#: main/templates/main/layout.html:154 main/views.py:18
 msgid "Художникам"
 msgstr "For artists"
 
@@ -72,17 +72,19 @@ msgstr "Kaliningrad July 20 - September 30"
 
 #: main/templates/main/index.html:42 main/templates/main/layout.html:41
 #: main/templates/main/layout.html:53 main/templates/main/layout.html:159
-#: main/templates/main/viewers.html:10
+#: main/templates/main/viewers.html:10 main/views.py:27
 msgid "Зрителям"
 msgstr "For viewers"
 
 #: main/templates/main/index.html:50 main/templates/main/layout.html:42
 #: main/templates/main/layout.html:54 main/templates/main/layout.html:164
+#: main/views.py:36
 msgid "О проекте"
 msgstr "About the project"
 
 #: main/templates/main/index.html:58 main/templates/main/layout.html:43
 #: main/templates/main/layout.html:55 main/templates/main/layout.html:169
+#: main/views.py:45
 msgid "История проекта"
 msgstr "Project history"
 
@@ -94,12 +96,13 @@ msgstr "Virtual exhibitions"
 
 #: main/templates/main/index.html:74 main/templates/main/layout.html:45
 #: main/templates/main/layout.html:57 main/templates/main/layout.html:179
+#: main/views.py:54
 msgid "Сотрудничество"
 msgstr "Cooperation"
 
 #: main/templates/main/index.html:82 main/templates/main/layout.html:46
 #: main/templates/main/layout.html:58 main/templates/main/layout.html:184
-#: main/templates/main/partners.html:10
+#: main/templates/main/partners.html:10 main/views.py:63
 msgid "Партнёры"
 msgstr "Partners"
 
@@ -121,7 +124,7 @@ msgid "Выйти"
 msgstr "Sign out"
 
 #: main/templates/main/layout.html:84
-#: users/templates/users/registration.html:11
+#: users/templates/users/registration.html:11 users/views.py:15
 msgid "Регистрация"
 msgstr "Registration"
 
@@ -137,6 +140,10 @@ msgstr "Details and Help"
 #: main/templates/main/layout.html:196
 msgid "Мы в coциальных сетях"
 msgstr "Follow us"
+
+#: main/views.py:9
+msgid "Международная выставка искусств | Я Моне Я Шишкин Я Малевич"
+msgstr "International Art Exhibition | R Monet R Shishkin R Malevich"
 
 #: users/forms.py:15 users/forms.py:30
 msgid "Логин"
@@ -158,3 +165,11 @@ msgstr "Close"
 #: users/templates/users/registration.html:53
 msgid "Зарегистрироваться"
 msgstr "Register"
+
+#: users/views.py:28
+msgid "Авторизация"
+msgstr "Authorization"
+
+#: virtual/views.py:11 virtual/views.py:20
+msgid "Виртуальная выставка"
+msgstr "Virtual exhibition"

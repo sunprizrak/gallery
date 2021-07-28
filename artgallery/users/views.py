@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 from django.urls import reverse_lazy
 from django.views.generic import CreateView
 from .forms import RegisterUserForm, LoginUserForm
+from django.utils.translation import ugettext_lazy as _
 
 
 class RegisterUserView(CreateView):
@@ -11,7 +12,7 @@ class RegisterUserView(CreateView):
     template_name = 'users/registration.html'
     success_url = reverse_lazy('login')
     extra_context = {
-        'title': 'Регистрация'
+        'title': _('Регистрация')
     }
 
     def form_valid(self, form, backend='django.contrib.auth.backends.ModelBackend'):
@@ -24,7 +25,7 @@ class LoginUserView(LoginView):
     form_class = LoginUserForm
     template_name = 'users/login.html'
     extra_context = {
-        'title': 'Авторизация'
+        'title': _('Авторизация')
     }
 
     def get_success_url(self):
