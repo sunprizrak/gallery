@@ -286,12 +286,38 @@ body {
 /* Section Cap */
 
 .cap {
-    padding: 80px 0 30px 0;
+    padding: 80px 0 0 0;
 }
 
 #cap-right {
     margin-top: 17px;
 }
+
+#Artist3DObj {
+    position: absolute;
+    margin-top: -20vh;
+    margin-left: 6vw;
+}
+
+#cap-links {
+    margin-top: 3vh;
+}
+
+/* grid */
+
+#cap-link1 {
+    margin-left: -4vw;
+}
+
+#cap-link2 {
+    margin-left: -21vw;
+}
+
+.liquid-button path {
+  cursor: pointer;
+}
+
+/* end grid */
 
 .h1-font-large {
     font-size: 6vw;
@@ -301,23 +327,6 @@ body {
 
 #cap-right p {
     font-size: 2vw;
-}
-
-#cap-right-link {
-    margin-top: 2vw;
-    margin-left: 5vw;
-}
-
-#cap-right-link .nav-link .rounded-pill {
-    transition: transform .6s ease;
-}
-
-#cap-right-link .nav-link:nth-child(1) .rounded-pill:hover {
-    transform: scale(1.05);
-}
-
-#cap-right-link .nav-link:nth-child(2) .rounded-pill:hover {
-    transform: scale(1.05);
 }
 
 /* End Section Cap */
@@ -928,8 +937,24 @@ h2 {
         font-size: 32vw;
     }
 
+    #cap-cont {
+        text-align: center;
+    }
+
     #cap-right p {
         font-size: 6vw;
+    }
+
+    #Artist3DObj {
+        display: none!important;
+    }
+
+    #cap-link1 {
+        margin: auto;
+    }
+
+    #cap-link2 {
+        margin: auto;
     }
 
     .services .icon-box {
