@@ -1,0 +1,75 @@
+.profile {
+    padding: 100px 0 0 0;
+}
+
+.profile h1 {
+   font-size: 16px;
+   font-weight: 500;
+}
+
+.profile p {
+    margin-left: 1vw;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#edit-menu {
+    margin: 5vh 0 0 9vw !important;
+}
+
+.dropdown-menu form {
+    width: 31vw;
+}
+
+.inline {
+    display: inline-flex;
+}
+
+
+
+/* Phone */
+@media (max-width: 500px) {
+    .profile img {
+        width: 30vw;
+    }
+
+    #prof-info {
+        padding-left: 3vw;
+        margin-top: -3vh;
+    }
+
+    .dropdown-menu form {
+        width: 93vw;
+    }
+
+    #edit-menu {
+        margin: 5vh 0 0 -79vw !important;
+    }
+
+    #inline-email {
+        margin-left: -38vw;
+    }
+}
+/* End Phone */
+
+/* Tablet */
+@media (min-width: 700px) and (max-width: 900px) {
+    .profile img {
+        width: 30vw;
+    }
+
+    #prof-info {
+        padding-left: 3vw;
+        margin-top: -3vh;
+    }
+
+    #edit-menu {
+        margin: 5vh 0 0 -50vw !important;
+    }
+
+    .dropdown-menu form {
+        width: 76vw;
+    }
+}
+/* End Tablet */
+/* End Mobile */

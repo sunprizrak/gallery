@@ -4,6 +4,10 @@
 
 {% block title %}{{ title }}{% endblock %}
 
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'virtual/css/virtual.css' %}?v=1.0">
+{% endblock %}
+
 {% block content %}
 <section class="virtual">
     <div class="container">
@@ -12,7 +16,7 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                <div class="icon-box position-relative">
+                <div class="icon-box-virtual radius-left position-relative">
                     <div class="icon">
                         <i class="fas fa-vr-cardboard"></i>
                     </div>
@@ -23,7 +27,7 @@
             </div>
             {% for el in virtual %}
                 <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
-                    <div class="icon-box position-relative">
+                    <div class="icon-box-virtual position-relative">
                         <div class="icon">
                             <i class="fas fa-vr-cardboard"></i>
                         </div>

@@ -3,7 +3,7 @@ from .models import ArtistModel, ViewerModel, AboutModel, HistoryModel, Together
 from django.utils.translation import ugettext_lazy as _
 
 
-class HomeView(TemplateView,):
+class HomeView(TemplateView):
     template_name = 'main/index.html'
     extra_context = {
         'title': _('Международная выставка искусств | Я Моне Я Шишкин Я Малевич'),

@@ -1,6 +1,11 @@
 {% extends 'main/layout.html' %}
+{% load static i18n %}
 
 {% block title %}{{ title }}{% endblock %}
+
+{% block extrahead %}
+    <link rel="stylesheet" href="{% static 'virtual/css/virtual_detail.css' %}?v=1.0">
+{% endblock %}
 
 {% block content %}
     <section class="virtual-detail">

@@ -1,0 +1,44 @@
+.modal-header {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.modal-title {
+    color: #fff;
+}
+
+.modal-footer {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.btn-right {
+    float: right;
+}
+
+.modal-footer .btn-outline-success {
+    border-color: #fff;
+    color: #fff;
+}
+
+.modal-footer .btn-outline-success:hover {
+    border-color: #198754;
+}
+
+.errors {
+    color: #eb5959;
+}
+
+#img-google {
+    width: 20px;
+}
+/* End Modal */
+
+/* mobile */
+@media (max-width: 1200px) {
+     .modal-log-reg {
+        margin-top: 2vh;
+    }
+}
