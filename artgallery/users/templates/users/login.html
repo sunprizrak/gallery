@@ -8,50 +8,40 @@
 {% endblock %}
 
 {% block modal %}
-     <div class="modal fade" id="logModal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
+    <div class="modal fade" id="logModal" tabindex="-1" aria-labelledby="logModalLabel" aria-hidden="true">
          <div class="modal-dialog modal-sm">
              <form method="post">
                  {% csrf_token %}
                  <div class="modal-content">
                      <div class="modal-header">
                          <h5 class="modal-title" id="logModalLabel">{% trans 'Войти' %}</h5>
-                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                         <button type="button" class="btn-close " data-bs-dismiss="modal" aria-label="Close"></button>
                      </div>
                      <div class="modal-body">
-                         <div class="row-1">
-                             <div class="col my-sm-3">
-                                 {{ form.username }}
-                             </div>
-                             <div class="col my-sm-3">
-                                 {{ form.password }}
-                             </div>
-                             <div class="col errors my-sm-3">
-                                 {{ form.non_field_errors }}
-                             </div>
+                        <div class="my-3">
+                            {{ form.username }}
+                        </div>
+                         <div class="mb-3">
+                             {{ form.password }}
+                         </div>
+                         <div class="mb-3 errors">
+                             {{ form.non_field_errors }}
                          </div>
                      </div>
                      <div class="modal-footer">
-                         <div class="row-1 w-100">
-                             <div class="col my-sm-3">
-                                 <a class="btn btn-outline-success" href="{% url 'social:begin' 'google-oauth2' %}">
-                                     <img id="img-google" src="{% static 'users/img/google_logo.png' %}" alt="Google sign-in">Login with Google
-                                 </a>
-                             </div>
-                             <div class="col">
-                                 <div class="row">
-                                     <div class="col">
-                                        <button type="submit" class="btn btn-success">{% trans 'Войти' %}</button>
-                                     </div>
-                                     <div class="col">
-                                        <button type="button" class="btn btn-secondary btn-right" data-bs-dismiss="modal">{% trans 'Закрыть' %}</button>
-                                     </div>
-                                 </div>
-                             </div>
+                         <div class="w-100 d-flex justify-content-center">
+                             <a class="btn btn-outline-success" href="{% url 'social:begin' 'google-oauth2' %}">
+                                <img id="img-google" src="{% static 'users/img/google_logo.png' %}" alt="Google sign-in">Login with Google
+                            </a>
                          </div>
-                     </div>
+                         <div class="w-100">
+                             <button type="submit" class="btn btn-success">{% trans 'Войти' %}</button>
+                             <button type="button" class="btn btn-secondary btn-right" data-bs-dismiss="modal">{% trans 'Закрыть' %}</button>
+                         </div>
+                    </div>
                  </div>
-             </form>
+            </form>
          </div>
-     </div>
+    </div>
     <script type="text/javascript" src="{% static 'users/js/modal_log.js' %}"></script>
 {% endblock %}

@@ -5,7 +5,7 @@
 
 {% block content %}
     <section class="cap">
-        <div class="container" id="cap-cont">
+        <div class="container">
             <div class="row">
                 <div class="col">
                     <h1 class="h1-font-large">{% trans 'Я Моне' %}</h1>
@@ -14,47 +14,15 @@
                 </div>
                 <div id="cap-right" class="col">
                     <p>{% trans 'Мы примем на выставку от каждого художника по одному произведению при условии, что оно пройдёт во входную дверь' %}</p>
-                </div>
-            </div>
-            <div class="row" id="cap-links">
-                <div id="col-link1" class="col">
-                    <a class="nav-link" href="{% url 'artists' %}">
-                        <svg id="cap-link1" class="liquid-button"
-                             data-text="{% trans 'Калининград Приём работ' %}"
-                             data-force-factor="0.1"
-                             data-layer-1-viscosity="0.5"
-                             data-layer-2-viscosity="0.4"
-                             data-layer-1-mouse-force="400"
-                             data-layer-2-mouse-force="500"
-                             data-layer-1-force-limit="1"
-                             data-layer-2-force-limit="2"
-                             data-color1="#FFF500"
-                             data-color2="#20D8F9"
-                             data-color3="#20D8F9">
-                        </svg>
-                    </a>
-                </div>
-                <div id="col-link2" class="col">
-                    <a class="nav-link" href="{% url 'viewers' %}">
-                        <svg id="cap-link2" class="liquid-button"
-                             data-text="{% trans 'Калининград 20 июля - 30 сентября' %}"
-                             data-force-factor="0.1"
-                             data-layer-1-viscosity="0.5"
-                             data-layer-2-viscosity="0.4"
-                             data-layer-1-mouse-force="400"
-                             data-layer-2-mouse-force="500"
-                             data-layer-1-force-limit="1"
-                             data-layer-2-force-limit="2"
-                             data-width="300"
-                             data-color1="#FFF500"
-                             data-color2="#20D8F9"
-                             data-color3="#20D8F9">
-                        </svg>
-                    </a>
+                    <div id="cap-right-link" class="сol">
+                        <a class="nav-link" href="{% url 'artists' %}"><button type="button" class="btn btn-info rounded-pill">{% trans 'Калининград Приём работ' %}</button></a>
+                        <a class="nav-link" href="{% url 'viewers' %}"><button type="button" class="btn btn-success rounded-pill">{% trans 'Калининград 20 июля - 30 сентября' %}</button></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="services">
         <div class="container">
             <div class="row">
@@ -125,10 +93,5 @@
             </div>
         </div>
     </section>
-    <!-- 3D models -->
-    <script>var path = '{% static 'main/3D/artist/scene.gltf' %}'</script>
-    <script src="{% static 'main/js/model_artist.js' %}"></script>
-    <!-- grid cap-links -->
-    <script src="{% static 'main/js/grid.js' %}?v=1.0"></script>
 {% endblock %}
 

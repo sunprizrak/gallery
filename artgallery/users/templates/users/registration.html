@@ -18,50 +18,40 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <div class="row-1">
-                            <div class="col my-sm-3">
-                                {{ form.username }}
-                            </div>
-                            <div class="col errors my-sm-3">
-                                {{ form.username.errors }}
-                            </div>
-                            <div class="col my-sm-3">
-                                {{ form.email }}
-                            </div>
-                            <div class="col errors my-sm-3">
-                                {{ form.email.errors }}
-                            </div>
-                            <div class="col my-sm-3">
-                                {{ form.password1 }}
-                            </div>
-                            <div class="col errors my-sm-3">
-                                {{ form.password1.errors }}
-                            </div>
-                            <div class="col my-sm-3">
-                                {{ form.password2 }}
-                            </div>
-                            <div class="col errors my-sm-3">
-                                {{ form.password2.errors }}
-                            </div>
+                        <div class="my-3">
+                            {{ form.username }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.username.errors }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.email }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.email.errors }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.password1 }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.password1.errors }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.password2 }}
+                        </div>
+                        <div class="mb-3">
+                            {{ form.password2.errors }}
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <div class="row-1 w-100">
-                            <div class="col my-sm-3">
-                                <a class="btn btn-outline-success" href="{% url 'social:begin' 'google-oauth2' %}">
-                                    <img id="img-google" src="{% static 'users/img/google_logo.png' %}" alt="Google sign-in">Login with Google
-                                </a>
-                            </div>
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col">
-                                        <button type="submit" class="btn btn-primary">{% trans 'Зарегистрироваться' %}</button>
-                                    </div>
-                                    <div class="col">
-                                        <button type="button" class="btn btn-secondary btn-right" data-bs-dismiss="modal">{% trans 'Закрыть' %}</button>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="w-100 d-flex justify-content-center">
+                            <a class="btn btn-outline-success" href="{% url 'social:begin' 'google-oauth2' %}">
+                                <img id="img-google" src="{% static 'users/img/google_logo.png' %}" alt="Google sign-in">Login with Google
+                            </a>
+                        </div>
+                        <div class="w-100">
+                            <button type="submit" class="btn btn-primary">{% trans 'Зарегистрироваться' %}</button>
+                            <button type="button" class="btn btn-secondary btn-right" data-bs-dismiss="modal">{% trans 'Закрыть' %}</button>
                         </div>
                     </div>
                 </div>
