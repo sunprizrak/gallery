@@ -1,7 +1,10 @@
-@import url(//fonts.googleapis.com/css?family=Georgia);
+@font-face {
+    font-family: 'Georgia';
+    src: url('../font/georgia.ttf') format('truetype');
+}
 
 body {
-    font-family: 'Georgia', sans-serif !important;
+    font-family: Georgia !important;
 }
 
 /* Header */
@@ -193,7 +196,18 @@ body {
     border-color: #fff;
 }
 
-.scrollup {
+/* scroll-up */
+
+.scroll-up {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+}
+
+.btn-up {
+    position: absolute;
+    right: 1%;
+    bottom: 50px;
     width: 60px;
     border-radius: 50%;
     color: #fff;
@@ -203,15 +217,10 @@ body {
     cursor: pointer;
     display: none;
     text-align: center;
-    position: absolute;
-    margin-left: 91vw;
-    margin-top: 75vh;
-    transition: transform .6s ease;
+
 }
 
-.scrollup:hover {
-    transform: scale(1.05);
-}
+/* end scroll-up */
 
 
 /* End Header */
@@ -224,35 +233,18 @@ body {
     padding: 80px 0 30px 0;
 }
 
-#cap-right {
-    margin-top: 17px;
-}
-
-.h1-font-large {
-    font-size: 6vw;
+#cap-left {
     letter-spacing: 8px;
     color: #eb5959;
 }
 
+#cap-left h1 {
+    font-size: 6vw;
+}
+
 #cap-right p {
     font-size: 2vw;
-}
-
-#cap-right-link {
-    margin-top: 2vw;
-    margin-left: 5vw;
-}
-
-#cap-right-link .nav-link .rounded-pill {
-    transition: transform .6s ease;
-}
-
-#cap-right-link .nav-link:nth-child(1) .rounded-pill:hover {
-    transform: scale(1.05);
-}
-
-#cap-right-link .nav-link:nth-child(2) .rounded-pill:hover {
-    transform: scale(1.05);
+    text-align: center;
 }
 
 /* End Section Cap */
@@ -721,8 +713,6 @@ h2 {
     transform: scale(1.05);
 }
 
-
-
 /* End Footer */
 
 
@@ -734,8 +724,9 @@ h2 {
         font-size: 7vw;
     }
 
-    .h1-font-large {
+    #cap-left h1 {
         font-size: 13vw;
+        margin-left: 5%;
     }
 
     .navbar-nav .nav-item {
@@ -752,11 +743,6 @@ h2 {
 
     .services .icon-box {
         padding-bottom: 35px;
-    }
-
-    .scrollup {
-        margin-left: 77vw;
-        margin-top: 83vh;
     }
 
     #map {
@@ -783,6 +769,11 @@ h2 {
     .footer-top .social-links h3{
         font-size: 6vw;
         padding-top: 2vh;
+    }
+
+    .btn-up {
+        right: 4%;
+        bottom: 20px;
     }
 
 }

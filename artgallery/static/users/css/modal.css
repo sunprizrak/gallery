@@ -14,9 +14,9 @@
 	animation: gradient 15s ease infinite;
 }
 
-/*.btn-right {
+.btn-right {
     float: right;
-} */
+}
 
 .modal-footer .btn-outline-success {
     border-color: #fff;

@@ -7,22 +7,47 @@
     <section class="cap">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1 class="h1-font-large">{% trans 'Я Моне' %}</h1>
-                    <h1 class="h1-font-large">{% trans 'Я Шишкин' %}</h1>
-                    <h1 class="h1-font-large">{% trans 'Я Малевич' %}</h1>
+                <div class="col-sm-6" id="cap-left">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>{% trans 'Я Моне' %}</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>{% trans 'Я Шишкин' %}</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1>{% trans 'Я Малевич' %}</h1>
+                        </div>
+                    </div>
                 </div>
-                <div id="cap-right" class="col">
-                    <p>{% trans 'Мы примем на выставку от каждого художника по одному произведению при условии, что оно пройдёт во входную дверь' %}</p>
-                    <div id="cap-right-link" class="сol">
-                        <a class="nav-link" href="{% url 'artists' %}"><button type="button" class="btn btn-info rounded-pill">{% trans 'Калининград Приём работ' %}</button></a>
-                        <a class="nav-link" href="{% url 'viewers' %}"><button type="button" class="btn btn-success rounded-pill">{% trans 'Калининград 20 июля - 30 сентября' %}</button></a>
+                <div class="col-sm-6" id="cap-right" >
+                    <div class="row">
+                        <div class="col mt-3">
+                            <p>{% trans 'Мы примем на выставку от каждого художника по одному произведению при условии, что оно пройдёт во входную дверь' %}</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col d-flex justify-content-start">
+                            <a href="{% url 'artists' %}"><button type="button" class="btn btn-info rounded-pill">{% trans 'Калининград Приём работ' %}</button></a>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                         <div class="col d-flex justify-content-end">
+                            <a href="{% url 'viewers' %}">
+                                <button type="button" class="btn btn-success rounded-pill">
+                                    {% trans 'Калининград 20 июля - 30 сентября' %}
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="services">
         <div class="container">
             <div class="row">
