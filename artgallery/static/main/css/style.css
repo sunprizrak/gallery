@@ -561,11 +561,11 @@ h2 {
     margin-top: 80px;
 }
 
-.partners-block {
-    margin-top: 30px;
+.partners img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-
 
 /* End Section partners */
 
