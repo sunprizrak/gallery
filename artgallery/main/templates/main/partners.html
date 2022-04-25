@@ -10,17 +10,15 @@
                 <h2>{% trans 'Партнёры' %}</h2>
             </div>
             <div class="row">
-                <div class="col">
-                    {% if object %}
-                        {% for el in object %}
-                            <div class="partners-block">
-                                {{ el.content | safe }}
-                            </div>
-                        {% endfor %}
-                    {% else %}
-                        <p>У вас нет записей</p>
-                    {% endif %}
-                </div>
+                {% if object %}
+                    {% for el in object %}
+                        <div class="col-sm mt-3 d-flex justify-content-center align-items-center">
+                            {{ el.content | safe }}
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <p>У вас нет записей</p>
+                {% endif %}
             </div>
         </div>
     </section>
